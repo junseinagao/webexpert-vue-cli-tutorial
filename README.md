@@ -1,4 +1,4 @@
-# Geeksalon WebExpert コース Vue ClI チュートリアル
+# Geeksalon WebExpert コース Vue CLI チュートリアル
 
 ## Project setup
 
