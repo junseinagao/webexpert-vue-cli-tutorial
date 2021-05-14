@@ -3,9 +3,9 @@
   <div class="tutorial">
     <div>
       <h1>
-        <span @mouseover="fire">{{ icon }}</span>
+        <span @mousemove="fire" @mouseleave="bomb">{{ icon }}</span>
         {{ courseName }}コース Vue CLI チュートリアル
-        <span @mouseover="fire">{{ icon }}</span>
+        <span @mousemove="fire" @mouseleave="bomb">{{ icon }}</span>
       </h1>
       <p>
         Vue CLIでの開発は、new
@@ -29,11 +29,10 @@ export default {
   // 他の methodsやcomputed等は、new Vueと一緒です。
   methods: {
     fire() {
-      if (this.icon === "🔥") {
-        this.icon = "🧨"
-      } else if (this.icon === "🧨") {
-        this.icon = "🔥"
-      }
+      this.icon = "🔥"
+    },
+    bomb() {
+      this.icon = "🧨"
     },
   },
 }
