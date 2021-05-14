@@ -4,7 +4,7 @@
     <div>
       <h1>
         <span @mousemove="fire" @mouseleave="bomb">{{ icon }}</span>
-        {{ courseName }}コース Vue CLI チュートリアル
+        WebExpertコース Vue CLI チュートリアル
         <span @mousemove="fire" @mouseleave="bomb">{{ icon }}</span>
       </h1>
       <p>
@@ -22,7 +22,6 @@ export default {
   // ❗️ .vueファイルでは、dataは、data () { return {} }の様に書きます。❗️
   data() {
     return {
-      courseName: "WebExpert",
       icon: "🧨",
     }
   },
