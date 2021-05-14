@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Tutorial :style="{ marginTop: 3.75 + 'rem' }"></Tutorial>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue"
+import Tutorial from "@/components/Tutorial.vue"
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Tutorial,
   },
 }
 </script>
@@ -21,8 +20,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
