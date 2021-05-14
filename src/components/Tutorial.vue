@@ -2,10 +2,10 @@
   <!-- ❗️ .vueファイルの中で、<template>タグは、1つの子しか持てません。❗️ -->
   <div class="tutorial">
     <div>
-      <h1 @mouseover="fire">
-        {{ icon }}
+      <h1>
+        <span @mouseover="fire">{{ icon }}</span>
         {{ courseName }}コース Vue CLI チュートリアル
-        {{ icon }}
+        <span @mouseover="fire">{{ icon }}</span>
       </h1>
       <p>
         Vue CLIでの開発は、new
