@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <Tutorial :style="{ marginTop: 3.75 + 'rem' }"></Tutorial>
+    <Counter></Counter>
   </div>
 </template>
 
 <script>
 import Tutorial from "@/components/Tutorial.vue"
-
+import Counter from "@/components/Counter.vue"
 export default {
   name: "App",
   components: {
     Tutorial,
+    Counter,
   },
 }
 </script>
